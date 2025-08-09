@@ -8,7 +8,7 @@ class WeatherService {
   WeatherService(this.dio);
   Future<WeatherModel> getCurrentWeather({required String cityName}) async {
     try {
-      final String apiKey = dotenv.env['NEWS_API_KEY']!;
+      final String apiKey = dotenv.env['WEATHER_API_KEY']!;
       Response response = await dio
           .get('$baseUrl/forecast.json?key=$apiKey&q=$cityName&days=1');
       WeatherModel weatherModel = WeatherModel.fromJson(response.data);
@@ -22,3 +22,4 @@ class WeatherService {
     }
   }
 }
+
