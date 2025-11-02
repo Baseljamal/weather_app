@@ -11,16 +11,16 @@ class NoWeatherBody extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Center(
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'there is no weather 😔 start',
+              'there is no weather 😔',
               style: TextStyle(
                 fontSize: 30,
               ),
             ),
             Text(
-              'searching now 🔍',
+              'start searching now 🔍',
               style: TextStyle(
                 fontSize: 30,
               ),
